@@ -1,0 +1,356 @@
+$date
+	Sat Jun 26 13:53:52 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module main $end
+$var reg 1 ! CLK $end
+$var reg 1 " RST $end
+$var reg 32 # cycle [31:0] $end
+$var reg 1 $ do_cycles $end
+$var reg 1 % do_fsdb $end
+$var reg 1 & do_fst $end
+$var reg 1 ' do_vcd $end
+$var reg 2048 ( filename [2048:1] $end
+$scope module top $end
+$var wire 1 ! CLK $end
+$var wire 1 " RST_N $end
+$var wire 1 ) WILL_FIRE_RL_disp_out $end
+$var wire 1 * WILL_FIRE_RL_inputs $end
+$var wire 1 + \dut$request_control $end
+$var wire 65 , \dut$request_in [64:0] $end
+$var wire 3 - \dut$request_roundingmode [2:0] $end
+$var wire 1 . \state$EN $end
+$var wire 32 / \state$D_IN [31:0] $end
+$var wire 33 0 \dut$oout [32:0] $end
+$var wire 5 1 \dut$oexceptionFlags [4:0] $end
+$var wire 1 2 CAN_FIRE_RL_inputs $end
+$var wire 1 3 CAN_FIRE_RL_disp_out $end
+$var reg 32 4 state [31:0] $end
+$var reg 64 5 v__h184 [63:0] $end
+$var reg 64 6 v__h248 [63:0] $end
+$var reg 64 7 v__h299 [63:0] $end
+$scope module dut $end
+$var wire 1 8 CAN_FIRE_request $end
+$var wire 1 ! CLK $end
+$var wire 1 9 RDY_oexceptionFlags $end
+$var wire 1 " RST_N $end
+$var wire 1 : WILL_FIRE_request $end
+$var wire 5 ; oexceptionFlags [4:0] $end
+$var wire 33 < oout [32:0] $end
+$var wire 1 = \recTorec$control $end
+$var wire 65 > \recTorec$in [64:0] $end
+$var wire 3 ? \recTorec$roundingMode [2:0] $end
+$var wire 1 + request_control $end
+$var wire 65 @ request_in [64:0] $end
+$var wire 3 A request_roundingmode [2:0] $end
+$var wire 33 B \recTorec$out [32:0] $end
+$var wire 5 C \recTorec$exceptionFlags [4:0] $end
+$scope module recTorec $end
+$var wire 1 = control $end
+$var wire 65 D in [64:0] $end
+$var wire 3 E roundingMode [2:0] $end
+$var wire 1 F sign $end
+$var wire 54 G sigIn [53:0] $end
+$var wire 13 H sExpIn [12:0] $end
+$var wire 33 I out [32:0] $end
+$var wire 1 J isZero $end
+$var wire 1 K isSigNaN $end
+$var wire 1 L isNaN $end
+$var wire 1 M isInf $end
+$var wire 5 N exceptionFlags [4:0] $end
+$scope begin genblk2 $end
+$scope module roundRawInToOut $end
+$var wire 1 O commonCase $end
+$var wire 1 = control $end
+$var wire 1 P doShiftSigDown1 $end
+$var wire 23 Q fractOut [22:0] $end
+$var wire 1 R inexact $end
+$var wire 1 S infiniteExc $end
+$var wire 1 T isNaNOut $end
+$var wire 1 U notNaN_isInfOut $end
+$var wire 1 V notNaN_isSpecialInfOut $end
+$var wire 1 W overflow $end
+$var wire 1 X overflow_roundMagUp $end
+$var wire 1 Y pegMaxFiniteMagOut $end
+$var wire 1 Z pegMinNonzeroMagOut $end
+$var wire 1 [ propagateNaNPayload $end
+$var wire 1 \ roundMagUp $end
+$var wire 3 ] roundingMode [2:0] $end
+$var wire 1 ^ underflow $end
+$var wire 1 _ signOut $end
+$var wire 14 ` sAdjustedExp [13:0] $end
+$var wire 1 a roundingMode_odd $end
+$var wire 1 b roundingMode_near_maxMag $end
+$var wire 1 c roundingMode_near_even $end
+$var wire 1 d roundingMode_minMag $end
+$var wire 1 e roundingMode_min $end
+$var wire 1 f roundingMode_max $end
+$var wire 33 g out [32:0] $end
+$var wire 1 K invalidExc $end
+$var wire 1 F in_sign $end
+$var wire 54 h in_sig [53:0] $end
+$var wire 13 i in_sExp [12:0] $end
+$var wire 1 J in_isZero $end
+$var wire 1 L in_isNaN $end
+$var wire 1 M in_isInf $end
+$var wire 9 j expOut [8:0] $end
+$var wire 5 k exceptionFlags [4:0] $end
+$var wire 1 l common_underflow $end
+$var wire 1 m common_totalUnderflow $end
+$var wire 1 n common_overflow $end
+$var wire 1 o common_inexact $end
+$var wire 23 p common_fractOut [22:0] $end
+$var wire 9 q common_expOut [8:0] $end
+$var wire 27 r adjustedSig [26:0] $end
+$scope begin genblk2 $end
+$upscope $end
+$scope begin genblk4 $end
+$var wire 1 s anyRound $end
+$var wire 1 t anyRoundExtra $end
+$var wire 1 u roundCarry $end
+$var wire 1 v roundIncr $end
+$var wire 1 w roundPosBit $end
+$var wire 27 x roundPosMask [26:0] $end
+$var wire 1 y unboundedRange_anyRound $end
+$var wire 1 z unboundedRange_roundIncr $end
+$var wire 1 { unboundedRange_roundPosBit $end
+$var wire 27 | shiftedRoundMask [26:0] $end
+$var wire 15 } sRoundedExp [14:0] $end
+$var wire 15 ~ sExtAdjustedExp [14:0] $end
+$var wire 26 !" roundedSig [25:0] $end
+$var wire 27 "" roundMask [26:0] $end
+$scope begin genblk6 $end
+$var wire 25 #" roundMask_main [24:0] $end
+$scope module lowMask_roundMask $end
+$var wire 9 $" in [8:0] $end
+$var wire 25 %" reverseOut [24:0] $end
+$var wire 25 &" out [24:0] $end
+$var wire 513 '" c [512:0] $end
+$scope module reverse $end
+$var wire 25 (" in [24:0] $end
+$var wire 25 )" out [24:0] $end
+$scope begin Bit[0] $end
+$upscope $end
+$scope begin Bit[1] $end
+$upscope $end
+$scope begin Bit[2] $end
+$upscope $end
+$scope begin Bit[3] $end
+$upscope $end
+$scope begin Bit[4] $end
+$upscope $end
+$scope begin Bit[5] $end
+$upscope $end
+$scope begin Bit[6] $end
+$upscope $end
+$scope begin Bit[7] $end
+$upscope $end
+$scope begin Bit[8] $end
+$upscope $end
+$scope begin Bit[9] $end
+$upscope $end
+$scope begin Bit[10] $end
+$upscope $end
+$scope begin Bit[11] $end
+$upscope $end
+$scope begin Bit[12] $end
+$upscope $end
+$scope begin Bit[13] $end
+$upscope $end
+$scope begin Bit[14] $end
+$upscope $end
+$scope begin Bit[15] $end
+$upscope $end
+$scope begin Bit[16] $end
+$upscope $end
+$scope begin Bit[17] $end
+$upscope $end
+$scope begin Bit[18] $end
+$upscope $end
+$scope begin Bit[19] $end
+$upscope $end
+$scope begin Bit[20] $end
+$upscope $end
+$scope begin Bit[21] $end
+$upscope $end
+$scope begin Bit[22] $end
+$upscope $end
+$scope begin Bit[23] $end
+$upscope $end
+$scope begin Bit[24] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module inToRawIn $end
+$var wire 65 *" in [64:0] $end
+$var wire 1 M isInf $end
+$var wire 1 L isNaN $end
+$var wire 1 F sign $end
+$var wire 54 +" sig [53:0] $end
+$var wire 13 ," sExp [12:0] $end
+$var wire 1 J isZero $end
+$var wire 1 -" isSpecial $end
+$var wire 52 ." fract [51:0] $end
+$var wire 12 /" exp [11:0] $end
+$upscope $end
+$scope module isSigNaNIn $end
+$var wire 65 0" in [64:0] $end
+$var wire 1 K isSigNaN $end
+$var wire 1 1" isNaN $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+01"
+b101100010010111110110011010101011011001001101000100000110101000 0"
+b10110001001 /"
+b111110110011010101011011001001101000100000110101000 ."
+0-"
+b10110001001 ,"
+b10111110110011010101011011001001101000100000110101000 +"
+b101100010010111110110011010101011011001001101000100000110101000 *"
+b0 )"
+b0 ("
+b100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 '"
+b0 &"
+b0 %"
+b10001001 $"
+b0 #"
+b11 ""
+b101111101100110101010111 !"
+b111111010001001 ~
+b111111010001001 }
+b1 |
+1{
+1z
+1y
+b10 x
+1w
+1v
+0u
+1t
+1s
+b10111110110011010101011011 r
+b10001001 q
+b1111101100110101010111 p
+1o
+0n
+0m
+0l
+b1 k
+b10001001 j
+b10110001001 i
+b10111110110011010101011011001001101000100000110101000 h
+b1000100101111101100110101010111 g
+0f
+0e
+0d
+1c
+0b
+0a
+b11111010001001 `
+0_
+0^
+b0 ]
+0\
+0[
+0Z
+0Y
+1X
+0W
+0V
+0U
+0T
+0S
+1R
+b1111101100110101010111 Q
+0P
+1O
+b1 N
+0M
+0L
+0K
+0J
+b1000100101111101100110101010111 I
+b10110001001 H
+b10111110110011010101011011001001101000100000110101000 G
+0F
+b0 E
+b101100010010111110110011010101011011001001101000100000110101000 D
+b1 C
+b1000100101111101100110101010111 B
+b0 A
+b101100010010111110110011010101011011001001101000100000110101000 @
+b0 ?
+b101100010010111110110011010101011011001001101000100000110101000 >
+1=
+b1000100101111101100110101010111 <
+b1 ;
+1:
+19
+18
+bx 7
+bx 6
+bx 5
+b10101010101010101010101010101010 4
+03
+02
+b1 1
+b1000100101111101100110101010111 0
+b10101010101010101010101010101011 /
+0.
+b0 -
+b101100010010111110110011010101011011001001101000100000110101000 ,
+1+
+0*
+0)
+b110010001110101011011010111000000101110011101100110001101100100 (
+1'
+0&
+0%
+0$
+b0 #
+0"
+x!
+$end
+#1
+1.
+1*
+12
+b1 /
+b0 4
+1!
+b1 #
+#2
+1"
+#5
+b101 5
+0!
+#10
+0.
+0*
+02
+1)
+13
+b10 /
+b1 4
+1!
+#11
+b10 #
+#15
+b1111 7
+b1111 6
+0!

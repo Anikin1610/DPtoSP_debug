@@ -1,0 +1,453 @@
+$date
+	Sat Jun 26 14:35:14 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module compressBy2 $end
+$var wire 1 ! in $end
+$var wire 1 " out $end
+$upscope $end
+$scope module compressBy4 $end
+$var wire 1 # in $end
+$var wire 1 $ out $end
+$upscope $end
+$scope module lowMaskHiLo $end
+$var wire 1 % in $end
+$var wire 1 & reverseOut $end
+$var wire 1 ' out $end
+$var wire 3 ( c [2:0] $end
+$scope module reverse $end
+$var wire 1 & in $end
+$var wire 1 ' out $end
+$scope begin Bit[0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module roundRawFNToRecFN $end
+$var wire 1 ) control $end
+$var wire 1 * in_isInf $end
+$var wire 1 + in_isNaN $end
+$var wire 1 , in_isZero $end
+$var wire 5 - in_sExp [4:0] $end
+$var wire 6 . in_sig [5:0] $end
+$var wire 1 / in_sign $end
+$var wire 1 0 infiniteExc $end
+$var wire 1 1 invalidExc $end
+$var wire 3 2 roundingMode [2:0] $end
+$var wire 7 3 out [6:0] $end
+$var wire 5 4 exceptionFlags [4:0] $end
+$scope module roundAnyRawFNToRecFN $end
+$var wire 1 5 commonCase $end
+$var wire 1 ) control $end
+$var wire 2 6 fractOut [1:0] $end
+$var wire 1 * in_isInf $end
+$var wire 1 + in_isNaN $end
+$var wire 1 , in_isZero $end
+$var wire 5 7 in_sExp [4:0] $end
+$var wire 6 8 in_sig [5:0] $end
+$var wire 1 / in_sign $end
+$var wire 1 9 inexact $end
+$var wire 1 0 infiniteExc $end
+$var wire 1 1 invalidExc $end
+$var wire 1 : isNaNOut $end
+$var wire 1 ; notNaN_isInfOut $end
+$var wire 1 < notNaN_isSpecialInfOut $end
+$var wire 1 = overflow $end
+$var wire 1 > overflow_roundMagUp $end
+$var wire 1 ? pegMaxFiniteMagOut $end
+$var wire 1 @ pegMinNonzeroMagOut $end
+$var wire 1 A propagateNaNPayload $end
+$var wire 1 B roundMagUp $end
+$var wire 3 C roundingMode [2:0] $end
+$var wire 1 D underflow $end
+$var wire 1 E signOut $end
+$var wire 5 F sAdjustedExp [4:0] $end
+$var wire 1 G roundingMode_odd $end
+$var wire 1 H roundingMode_near_maxMag $end
+$var wire 1 I roundingMode_near_even $end
+$var wire 1 J roundingMode_minMag $end
+$var wire 1 K roundingMode_min $end
+$var wire 1 L roundingMode_max $end
+$var wire 7 M out [6:0] $end
+$var wire 4 N expOut [3:0] $end
+$var wire 5 O exceptionFlags [4:0] $end
+$var wire 1 P doShiftSigDown1 $end
+$var wire 1 Q common_underflow $end
+$var wire 1 R common_totalUnderflow $end
+$var wire 1 S common_overflow $end
+$var wire 1 T common_inexact $end
+$var wire 2 U common_fractOut [1:0] $end
+$var wire 4 V common_expOut [3:0] $end
+$var wire 6 W adjustedSig [5:0] $end
+$scope begin genblk1 $end
+$upscope $end
+$scope begin genblk4 $end
+$var wire 1 X anyRound $end
+$var wire 1 Y anyRoundExtra $end
+$var wire 1 Z roundCarry $end
+$var wire 1 [ roundIncr $end
+$var wire 1 \ roundPosBit $end
+$var wire 6 ] roundPosMask [5:0] $end
+$var wire 1 ^ unboundedRange_anyRound $end
+$var wire 1 _ unboundedRange_roundIncr $end
+$var wire 1 ` unboundedRange_roundPosBit $end
+$var wire 6 a shiftedRoundMask [5:0] $end
+$var wire 6 b sRoundedExp [5:0] $end
+$var wire 6 c sExtAdjustedExp [5:0] $end
+$var wire 5 d roundedSig [4:0] $end
+$var wire 6 e roundMask [5:0] $end
+$scope begin genblk6 $end
+$var wire 4 f roundMask_main [3:0] $end
+$scope module lowMask_roundMask $end
+$var wire 4 g in [3:0] $end
+$var wire 4 h reverseOut [3:0] $end
+$var wire 4 i out [3:0] $end
+$var wire 17 j c [16:0] $end
+$scope module reverse $end
+$var wire 4 k in [3:0] $end
+$var wire 4 l out [3:0] $end
+$scope begin Bit[0] $end
+$upscope $end
+$scope begin Bit[1] $end
+$upscope $end
+$scope begin Bit[2] $end
+$upscope $end
+$scope begin Bit[3] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module tb_dp2sp $end
+$var wire 33 m out [32:0] $end
+$var wire 5 n Flags [4:0] $end
+$var reg 1 o control $end
+$var reg 65 p in [64:0] $end
+$var reg 3 q roundingMode [2:0] $end
+$scope module dut $end
+$var wire 1 o control $end
+$var wire 65 r in [64:0] $end
+$var wire 3 s roundingMode [2:0] $end
+$var wire 1 t sign $end
+$var wire 54 u sigIn [53:0] $end
+$var wire 13 v sExpIn [12:0] $end
+$var wire 33 w out [32:0] $end
+$var wire 1 x isZero $end
+$var wire 1 y isSigNaN $end
+$var wire 1 z isNaN $end
+$var wire 1 { isInf $end
+$var wire 5 | exceptionFlags [4:0] $end
+$scope begin genblk2 $end
+$scope module roundRawInToOut $end
+$var wire 1 } commonCase $end
+$var wire 1 o control $end
+$var wire 1 ~ doShiftSigDown1 $end
+$var wire 23 !" fractOut [22:0] $end
+$var wire 1 "" inexact $end
+$var wire 1 #" infiniteExc $end
+$var wire 1 $" isNaNOut $end
+$var wire 1 %" notNaN_isInfOut $end
+$var wire 1 &" notNaN_isSpecialInfOut $end
+$var wire 1 '" overflow $end
+$var wire 1 (" overflow_roundMagUp $end
+$var wire 1 )" pegMaxFiniteMagOut $end
+$var wire 1 *" pegMinNonzeroMagOut $end
+$var wire 1 +" propagateNaNPayload $end
+$var wire 1 ," roundMagUp $end
+$var wire 3 -" roundingMode [2:0] $end
+$var wire 1 ." underflow $end
+$var wire 1 /" signOut $end
+$var wire 14 0" sAdjustedExp [13:0] $end
+$var wire 1 1" roundingMode_odd $end
+$var wire 1 2" roundingMode_near_maxMag $end
+$var wire 1 3" roundingMode_near_even $end
+$var wire 1 4" roundingMode_minMag $end
+$var wire 1 5" roundingMode_min $end
+$var wire 1 6" roundingMode_max $end
+$var wire 33 7" out [32:0] $end
+$var wire 1 y invalidExc $end
+$var wire 1 t in_sign $end
+$var wire 54 8" in_sig [53:0] $end
+$var wire 13 9" in_sExp [12:0] $end
+$var wire 1 x in_isZero $end
+$var wire 1 z in_isNaN $end
+$var wire 1 { in_isInf $end
+$var wire 9 :" expOut [8:0] $end
+$var wire 5 ;" exceptionFlags [4:0] $end
+$var wire 1 <" common_underflow $end
+$var wire 1 =" common_totalUnderflow $end
+$var wire 1 >" common_overflow $end
+$var wire 1 ?" common_inexact $end
+$var wire 23 @" common_fractOut [22:0] $end
+$var wire 9 A" common_expOut [8:0] $end
+$var wire 27 B" adjustedSig [26:0] $end
+$scope begin genblk2 $end
+$upscope $end
+$scope begin genblk4 $end
+$var wire 1 C" anyRound $end
+$var wire 1 D" anyRoundExtra $end
+$var wire 1 E" roundCarry $end
+$var wire 1 F" roundIncr $end
+$var wire 1 G" roundPosBit $end
+$var wire 27 H" roundPosMask [26:0] $end
+$var wire 1 I" unboundedRange_anyRound $end
+$var wire 1 J" unboundedRange_roundIncr $end
+$var wire 1 K" unboundedRange_roundPosBit $end
+$var wire 27 L" shiftedRoundMask [26:0] $end
+$var wire 15 M" sRoundedExp [14:0] $end
+$var wire 15 N" sExtAdjustedExp [14:0] $end
+$var wire 26 O" roundedSig [25:0] $end
+$var wire 27 P" roundMask [26:0] $end
+$scope begin genblk6 $end
+$var wire 25 Q" roundMask_main [24:0] $end
+$scope module lowMask_roundMask $end
+$var wire 9 R" in [8:0] $end
+$var wire 25 S" reverseOut [24:0] $end
+$var wire 25 T" out [24:0] $end
+$var wire 513 U" c [512:0] $end
+$scope module reverse $end
+$var wire 25 V" in [24:0] $end
+$var wire 25 W" out [24:0] $end
+$scope begin Bit[0] $end
+$upscope $end
+$scope begin Bit[1] $end
+$upscope $end
+$scope begin Bit[2] $end
+$upscope $end
+$scope begin Bit[3] $end
+$upscope $end
+$scope begin Bit[4] $end
+$upscope $end
+$scope begin Bit[5] $end
+$upscope $end
+$scope begin Bit[6] $end
+$upscope $end
+$scope begin Bit[7] $end
+$upscope $end
+$scope begin Bit[8] $end
+$upscope $end
+$scope begin Bit[9] $end
+$upscope $end
+$scope begin Bit[10] $end
+$upscope $end
+$scope begin Bit[11] $end
+$upscope $end
+$scope begin Bit[12] $end
+$upscope $end
+$scope begin Bit[13] $end
+$upscope $end
+$scope begin Bit[14] $end
+$upscope $end
+$scope begin Bit[15] $end
+$upscope $end
+$scope begin Bit[16] $end
+$upscope $end
+$scope begin Bit[17] $end
+$upscope $end
+$scope begin Bit[18] $end
+$upscope $end
+$scope begin Bit[19] $end
+$upscope $end
+$scope begin Bit[20] $end
+$upscope $end
+$scope begin Bit[21] $end
+$upscope $end
+$scope begin Bit[22] $end
+$upscope $end
+$scope begin Bit[23] $end
+$upscope $end
+$scope begin Bit[24] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module inToRawIn $end
+$var wire 65 X" in [64:0] $end
+$var wire 1 { isInf $end
+$var wire 1 z isNaN $end
+$var wire 1 t sign $end
+$var wire 54 Y" sig [53:0] $end
+$var wire 13 Z" sExp [12:0] $end
+$var wire 1 x isZero $end
+$var wire 1 [" isSpecial $end
+$var wire 52 \" fract [51:0] $end
+$var wire 12 ]" exp [11:0] $end
+$upscope $end
+$scope module isSigNaNIn $end
+$var wire 65 ^" in [64:0] $end
+$var wire 1 y isSigNaN $end
+$var wire 1 _" isNaN $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0_"
+b101100010010111110110011010101011011001001101000100000110101000 ^"
+b10110001001 ]"
+b111110110011010101011011001001101000100000110101000 \"
+0["
+b10110001001 Z"
+b10111110110011010101011011001001101000100000110101000 Y"
+b101100010010111110110011010101011011001001101000100000110101000 X"
+b0 W"
+b0 V"
+b100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 U"
+b0 T"
+b0 S"
+b10001001 R"
+b0 Q"
+b11 P"
+b101111101100110101010111 O"
+b111111010001001 N"
+b111111010001001 M"
+b1 L"
+1K"
+1J"
+1I"
+b10 H"
+1G"
+1F"
+0E"
+1D"
+1C"
+b10111110110011010101011011 B"
+b10001001 A"
+b1111101100110101010111 @"
+1?"
+0>"
+1="
+1<"
+b11 ;"
+b1001 :"
+b10110001001 9"
+b10111110110011010101011011001001101000100000110101000 8"
+b100100000000000000000000000 7"
+06"
+05"
+04"
+13"
+02"
+01"
+b11111010001001 0"
+0/"
+1."
+b0 -"
+0,"
+0+"
+0*"
+0)"
+1("
+0'"
+0&"
+0%"
+0$"
+0#"
+1""
+b0 !"
+0~
+1}
+b11 |
+0{
+0z
+0y
+0x
+b100100000000000000000000000 w
+b10110001001 v
+b10111110110011010101011011001001101000100000110101000 u
+0t
+b0 s
+b101100010010111110110011010101011011001001101000100000110101000 r
+b0 q
+b101100010010111110110011010101011011001001101000100000110101000 p
+1o
+b11 n
+b100100000000000000000000000 m
+bx l
+bx k
+b10000000000000000 j
+bx i
+bx h
+bx g
+bx f
+bx11 e
+bx d
+bx c
+bx b
+b0xxxx1 a
+z`
+x_
+x^
+bx0 ]
+x\
+x[
+xZ
+xY
+xX
+bz W
+bx V
+bx U
+xT
+xS
+xR
+xQ
+zP
+bzxxx O
+bx N
+bx M
+xL
+xK
+xJ
+xI
+xH
+xG
+bx F
+xE
+xD
+bz C
+xB
+0A
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+bz 8
+bz 7
+bx 6
+x5
+bzxxx 4
+bx 3
+bz 2
+z1
+z0
+z/
+bz .
+bz -
+z,
+z+
+z*
+z)
+b100 (
+x'
+x&
+z%
+x$
+z#
+x"
+z!
+$end
+#10

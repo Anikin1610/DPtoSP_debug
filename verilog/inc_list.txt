@@ -1,0 +1,6 @@
+../hardFloat_modules/HardFloat_consts.vi
+../hardFloat_modules/HardFloat_specialize.vi
+../hardFloat_modules/isSigNaNRecFN.v
+../hardFloat_modules/reverse.v
+../hardFloat_modules/lowMaskLoHi.v
+../hardFloat_modules/recFNToRawFN.v
