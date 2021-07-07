@@ -24,7 +24,6 @@ int main(int argc, char** argv, char** env){
     while (sim_time < 20)
     {
         dut->control = 1;
-        //dut->in = 0x05897D9AAD93441A8;
         dut->in[0] = 0xD93441A8;
         dut->in[1] = 0x5897D9AA;
         dut->in[2] = 0x0;
