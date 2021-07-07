@@ -11,7 +11,7 @@ module tb_dp2sp ();
     recFNToRecFN#(11, 53, 8, 24) dut (control, in , roundingMode, out, Flags);
 
     initial begin
-        $dumpfile("verilog_waveform.vcd");
+        $dumpfile("iverilog_waveform.vcd");
         $dumpvars;
     end
     
