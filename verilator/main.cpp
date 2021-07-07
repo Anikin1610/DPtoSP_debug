@@ -19,7 +19,7 @@ int main(int argc, char** argv, char** env){
     Verilated::traceEverOn(true);
     VerilatedVcdC *m_trace = new VerilatedVcdC;
     dut->trace(m_trace, 5);
-    m_trace->open("waveform.vcd");
+    m_trace->open("verilator_waveform.vcd");
 
     while (sim_time < 20)
     {
@@ -32,7 +32,6 @@ int main(int argc, char** argv, char** env){
         m_trace->dump(sim_time);
         sim_time++;
     }
-    std::cout << dut->out;
     m_trace->close();
     delete dut;
     exit(0);

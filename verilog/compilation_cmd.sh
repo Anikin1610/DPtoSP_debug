@@ -1,1 +1,0 @@
-iverilog -o tb_dp2sp -I ../hardFloat_modules -c inc_list.txt tb_rectorec.v
