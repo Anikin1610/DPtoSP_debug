@@ -1,7 +1,5 @@
 INCLUDE_DIRS = -I../hardFloat_modules
-VERILATOR_FLAGS = -Wall --trace -GinExpWidth=11 -GinSigWidth=53 -GoutExpWidth=8 -GoutSigWidth=24
-
-#-pvalue+inExpWidth=11 -pvalue+inSigWidth=53 -pvalue+outExpWidth=8 -pvalue+outSigWidth=24
+VERILATOR_FLAGS = -Wall -Wno-fatal --trace -GinExpWidth=11 -GinSigWidth=53 -GoutExpWidth=8 -GoutSigWidth=24
 
 default: verilate compile simulate
 
