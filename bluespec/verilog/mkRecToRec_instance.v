@@ -85,7 +85,7 @@ module mkRecToRec_instance(CLK,
   assign WILL_FIRE_request = 1'd1 ;
 
   // submodule recTorec
-  recFNToRecFN #(.inExpWidth(32'd11),
+  recFNToRecFN #(.inExpWidth(32'sd11),
 		 .inSigWidth(32'sd53),
 		 .outExpWidth(32'sd8),
 		 .outSigWidth(32'sd24)) recTorec(.control(recTorec$control),
